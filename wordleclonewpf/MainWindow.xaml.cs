@@ -58,7 +58,6 @@ namespace wordleclonewpf
 
 
             int lives = 4;
-            MessageBox.Show(word);
             livesblock.Text = lives.ToString();
         }
 
@@ -71,7 +70,6 @@ namespace wordleclonewpf
             if (Convert.ToInt32(livesblock.Text) > 0)
             {
                 String guess = test1.Text.ToUpper();
-                MessageBox.Show(word);
                 livesblock.Text = (Convert.ToInt32(livesblock.Text) - 1).ToString();
                 int x = -1;
                 if (string.IsNullOrEmpty(guess1.Text))
